@@ -19,6 +19,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: This could be a linter
       run: |
+        docker pull ceph/daemon-base:latest-nautilus
         echo but it is not.
 
   word-rules:
