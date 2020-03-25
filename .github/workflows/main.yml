@@ -36,6 +36,7 @@ jobs:
    runs-on: ubuntu-latest
 
    steps:
+   - uses: actions/checkout@v2
    - name: I dislike the word "wibble"
      run: |
       bash -c '! grep -q "wibble" README.md'
