@@ -36,5 +36,6 @@ jobs:
    runs-on: ubuntu-latest
 
    steps:
-   - name: Just another echo
-     run: echo "YO"
+   - name: I dislike the word "wibble"
+     run: |
+      !grep -q "wibble" README.md
