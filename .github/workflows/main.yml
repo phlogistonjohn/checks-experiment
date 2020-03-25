@@ -38,4 +38,4 @@ jobs:
    steps:
    - name: I dislike the word "wibble"
      run: |
-      bash -c '!grep -q "wibble" README.md'
+      bash -c '! grep -q "wibble" README.md'
